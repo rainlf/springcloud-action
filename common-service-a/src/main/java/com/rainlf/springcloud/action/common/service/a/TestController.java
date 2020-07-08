@@ -14,7 +14,7 @@ public class TestController {
 
     @GetMapping("")
     public String test() {
-        return "I am server A";
+        return "I am service A";
     }
 
 }

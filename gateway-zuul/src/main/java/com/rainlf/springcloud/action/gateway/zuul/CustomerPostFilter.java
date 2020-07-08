@@ -4,15 +4,20 @@ import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.util.StreamUtils;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 /**
  * @author : rain
  * @date : 2020/7/8 18:34
  */
 @Slf4j
-public class CustomerPreFilter extends ZuulFilter {
+public class CustomerPostFilter extends ZuulFilter {
 
     /**
      * 过滤器类型，决定过滤器在请求的哪个声明周期中执行，分为：
@@ -23,7 +28,7 @@ public class CustomerPreFilter extends ZuulFilter {
      */
     @Override
     public String filterType() {
-        return "pre";
+        return "post";
     }
 
     /**
@@ -48,16 +53,12 @@ public class CustomerPreFilter extends ZuulFilter {
     @Override
     public Object run() throws ZuulException {
         RequestContext context = RequestContext.getCurrentContext();
-        HttpServletRequest request = context.getRequest();
-
-        log.info("Pre filter: {} {} {}", request.getMethod(), request.getRequestURL().toString(), request.getParameterMap());
-        String test = request.getParameter("test");
-        if ("1".equals(test)) {
-            // 取消该请求的路由执行
-            context.setSendZuulResponse(false);
-            // 指定返回状态码
-            context.setResponseStatusCode(401);
-            return null;
+        try (InputStream in = context.getResponseDataStream()){
+            String response = StreamUtils.copyToString(in, StandardCharsets.UTF_8);
+            log.info("Post filter: {}", response);
+            context.setResponseBody(response);
+        }  catch (IOException e) {
+            log.error("", e);
         }
 
         return null;

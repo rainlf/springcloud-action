@@ -13,6 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class BookBController implements BookApi {
     @Override
     public String oneBook() {
-        return "I am a book from server B";
+        return "I am a book from service B";
     }
 }

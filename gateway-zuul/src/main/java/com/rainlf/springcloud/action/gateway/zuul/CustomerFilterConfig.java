@@ -15,4 +15,9 @@ public class CustomerFilterConfig {
     public ZuulFilter customerPreFilter() {
         return new CustomerPreFilter();
     }
+
+    @Bean
+    public ZuulFilter customerPostFilter() {
+        return new CustomerPostFilter();
+    }
 }
