@@ -54,4 +54,4 @@ presetting filters
 ## Sample Micro Soft Struct
 ![](./image/struct.jpg)
 
-> Specifically Thanks To [Jaki2012](https://github.com/jaki2012) 🍖🍳🥘🍋
+> Specifically Thanks To [Jaki2012](https://github.com/jaki2012) 🍖🍜🍳🥘🥕🍋
