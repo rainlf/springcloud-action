@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="common-api" />
         <module name="eureka-server" />
+        <module name="common-api" />
+        <module name="common-service-a" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common-api" target="1.8" />
+      <module name="common-service-a" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="springcloud-action" target="1.8" />
     </bytecodeTargetLevel>
@@ -19,6 +21,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common-api" options="-parameters" />
+      <module name="common-service-a" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
     </option>
   </component>

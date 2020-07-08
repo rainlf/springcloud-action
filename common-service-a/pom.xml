@@ -8,12 +8,21 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>common-api</artifactId>
+    <artifactId>common-service-a</artifactId>
 
     <dependencies>
         <dependency>
+            <groupId>com.rainlf.springcloud.action</groupId>
+            <artifactId>common-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
         <dependency>
