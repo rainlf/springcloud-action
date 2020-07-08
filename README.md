@@ -13,7 +13,7 @@
 | common-api| common-api| -|
 | common-service-a| common-service| 1121|
 | common-service-b| common-service| 1122|
-| consumer-feign| consumer-feign| 1131|
-| consumer-ribbon| consumer-ribbon| 1132|
+| consumer-ribbon| ribbon-consumer| 1131|
+| consumer-feign| feign-consumer| 1132|
 
 
