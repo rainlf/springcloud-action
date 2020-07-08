@@ -28,6 +28,11 @@ public class RibbonService {
         return restTemplate.getForEntity("http://COMMON-SERVICE/book", String.class).getBody();
     }
 
+    @HystrixCommand(fallbackMethod = "fallback")
+    public String timeoutBook() {
+        return restTemplate.getForEntity("http://COMMON-SERVICE/book/timeout", String.class).getBody();
+    }
+
     public String fallback() {
         return "safe error";
     }

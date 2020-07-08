@@ -12,4 +12,7 @@ public interface BookApi {
 
     @GetMapping("")
     String oneBook();
+
+    @GetMapping("/timeout")
+    String timeoutBook() throws InterruptedException;
 }

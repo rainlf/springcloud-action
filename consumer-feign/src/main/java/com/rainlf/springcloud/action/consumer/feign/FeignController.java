@@ -28,4 +28,9 @@ public class FeignController {
     public String oneBook() {
         return feignBookService.oneBook();
     }
+
+    @GetMapping("/book/timeout")
+    public String timeoutBook() throws InterruptedException {
+        return feignBookService.timeoutBook();
+    }
 }

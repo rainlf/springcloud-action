@@ -23,4 +23,9 @@ public class RibbonController {
     public String oneBook() {
         return ribbonService.oneBook();
     }
+
+    @GetMapping("/book/timeout")
+    public String timeoutBook() {
+        return ribbonService.timeoutBook();
+    }
 }

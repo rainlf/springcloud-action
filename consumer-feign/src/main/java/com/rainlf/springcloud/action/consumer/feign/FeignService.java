@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @author : rain
  * @date : 2020/7/8 17:25
  */
-@FeignClient(contextId = "test", value = "COMMON-SERVICE", fallback = FeignBookServiceFallback.class)
+@FeignClient(contextId = "test", value = "COMMON-SERVICE")
 public interface FeignService {
 
     @GetMapping("")
