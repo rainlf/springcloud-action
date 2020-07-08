@@ -20,6 +20,9 @@
         <module>common-api</module>
         <module>common-service-a</module>
         <module>common-service-b</module>
+        <module>consumer-ribbon</module>
+        <module>consumer-feign</module>
+        <module>gateway-zuul</module>
     </modules>
 
     <properties>
