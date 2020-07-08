@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4f156e-743b-46a3-b1b7-ba4dcf1fb3a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common-service-a/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service-a/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service-a/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service-a/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service-a/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service-a/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service-a/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service-a/src/main/java/com/rainlf/springcloud/action/common/service/a/BookAController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service-a/src/main/java/com/rainlf/springcloud/action/common/service/a/CommonServiceAApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service-a/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service-a/src/test/java/com/rainlf/springcloud/action/common/service/a/CommonServiceAApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service-a/src/main/java/com/rainlf/springcloud/action/common/service/a/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service-b/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service-b/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service-b/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service-b/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service-b/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service-b/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service-b/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service-b/src/main/java/com/rainlf/springcloud/action/common/service/b/BookBController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service-b/src/main/java/com/rainlf/springcloud/action/common/service/b/CommonServiceBApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service-b/src/main/java/com/rainlf/springcloud/action/common/service/b/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service-b/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service-b/src/test/java/com/rainlf/springcloud/action/common/service/b/CommonServiceBApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,10 +71,21 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.rainlf.springcloud.action.common.service.b" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean package -DskipTests" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -86,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+  <component name="RunManager" selected="Spring Boot.CommonServiceBApplication">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -116,6 +129,13 @@
     <configuration name="CommonServiceAApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="common-service-a" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.rainlf.springcloud.action.common.service.a.CommonServiceAApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonServiceBApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="common-service-b" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rainlf.springcloud.action.common.service.b.CommonServiceBApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,7 +179,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594189441632</updated>
-      <workItem from="1594189443440" duration="3157000" />
+      <workItem from="1594189443440" duration="3808000" />
     </task>
     <servers />
   </component>

@@ -18,6 +18,8 @@
     <modules>
         <module>eureka-server</module>
         <module>common-api</module>
+        <module>common-service-a</module>
+        <module>common-service-b</module>
     </modules>
 
     <properties>
